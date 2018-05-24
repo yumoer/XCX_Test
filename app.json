@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/index/index"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#F2DDDE",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "myumo",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}

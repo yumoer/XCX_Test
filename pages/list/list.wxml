@@ -1,0 +1,25 @@
+<!--pages/list/list.wxml-->
+<import src="../template/list-template.wxml"/>
+<view>
+  <swiper indicator-dots='true' indicator-color='#89ABE3' indicator-active-color='#F2DDDE' autoplay="true" interval="3000"    circular="true" previous-margin="20rpx" next-margin="20rpx">
+    <swiper-item>
+      <image src='/images/detail/carousel/01.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/detail/carousel/02.jpg'></image>
+    </swiper-item >
+    <swiper-item>
+      <image src='/images/detail/carousel/03.jpg'></image>
+    </swiper-item >
+    <swiper-item>
+      <image src='/images/detail/carousel/04.jpg'></image>
+    </swiper-item >
+  </swiper>
+  <block wx:for="{{listArr}}" wx:key="{{index}}">
+    <view>
+      <template is="listTemplate" data="{{...item}}"></template>
+    </view>
+  </block>
+  
+</view>
+

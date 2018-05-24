@@ -1,0 +1,34 @@
+/* pages/index.wxss */
+page{
+  height: 100%;
+  background: #F2DDDE;
+}
+.indexContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120rpx;
+}
+
+.indexContent image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+
+.indexName{
+  font-size: 32rpx;
+	font-weight: 700;
+	margin: 50rpx 0;
+}
+
+.goStudy{
+  width: 240rpx;
+	height: 80rpx;
+	border: 1rpx solid #405f80;
+	font-size: 24rpx;
+	text-align: center;
+	line-height: 80rpx;
+	border-radius: 10rpx;
+	margin-top: 240rpx;
+}
