@@ -19,52 +19,22 @@ Page({
     })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
+  toDetail(event){
+    console.log(event)
+    //跳转页面到详情页detail
+    let index = event.currentTarget.dataset.index
+    wx.navigateTo({ //保留之前的页面
+      url: '/pages/detail/detail?index='+index,  //动态显示，需要标识下标
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+  swiperToDetail(event){
+    console.log(event)
+    let index = event.target.dataset.index
+    wx.navigateTo({  //保留之前的页面
+      url: '/pages/detail/detail?index=' + index, //动态显示，需要标识下标
+    })
   }
+
+  
 })

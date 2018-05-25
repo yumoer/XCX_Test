@@ -1,48 +1,32 @@
-// pages/index.js
+// pages/movieDetail/movieDetail.js
+let appDatas = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    msg:'倾覆韶华',
-    userInfo:{}
-  },
-
-  handleClick() {
-    //console.log('父元素');
-    //跳转页面
-    wx.switchTab({
-      url: '/pages/list/list',
-      success(){
-        console.log('跳转成功');
-      }
-    })
+    movieObj:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('页面加载完毕');
-    console.log(this);
-    //开启定时器，发送ajax请求
-    //获取登陆用户信息
-    wx.getUserInfo({
-      success:(data) => {
-        console.log(data);
-        //更新数据
-        this.setData({userInfo:data.userInfo});
-      }
+    console.log(options);
+    let index = options.index;
+    this.setData({
+      movieObj: appDatas.data.movies[index]
     })
   },
-  
+
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    
   },
 
   /**

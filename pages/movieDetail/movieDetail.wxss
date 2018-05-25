@@ -1,0 +1,35 @@
+/* pages/movieDetail/movieDetail.wxss */
+.movieDetailContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.movieDetailContainer image{
+  width: 70%;
+  height: 700rpx;
+  margin: 20rpx auto;
+}
+
+.mDetail_name{
+  font-size: 40rpx;
+  font-weight: 700;
+  text-align: center;
+}
+
+.mDetail_info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 16%;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+  line-height: 50rpx;
+  font-weight: 400;
+}
+
+button{
+  width: 80%;
+  color: white;
+  background-color: #89ABE3;
+  margin-top: 20rpx;
+}
+

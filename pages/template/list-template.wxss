@@ -29,15 +29,18 @@
   margin: 0 20rpx;
 }
 .list_img{
-  width: 100%;
+  width: 95%;
   height: 400rpx;
   margin-top: 20rpx;
+  margin-left: 20rpx; 
+
 }
 .detail_content{
   font-size: 36rpx;
   color: #666;
   text-indent: 36rpx;
   line-height: 50rpx; 
+  margin: 10rpx 20rpx;
 }
 
 .attention{
@@ -47,7 +50,8 @@
 .attention image{
   width: 32rpx;
   height: 32rpx;
-  vertical-align: middle
+  vertical-align: middle;
+  margin-left: 20rpx;
 }
 
 .attention text{
